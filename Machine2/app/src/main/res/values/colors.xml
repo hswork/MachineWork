@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 背景颜色 -->
+    <color name="mainColor">#404674</color>
+    <color name="sub_color">#A6B0E0</color>
+    <color name="green">#0bbf0e</color>
+    <color name="white">#ffffff</color>
+    <color name="dialogBgColor">#E9ECF3</color>
+    <color name="btnCheckTrue">#1675BA</color>
+    <color name="black">#000000</color>
+
+    <color name="checkColor">#A6B0E1</color>
+    <color name="red">#c23333</color>
+    <color name="gray">#a49393</color>
+
+    <color name="setting_btn_choose">#6e7ded</color>
+    <color name="start_setting">#AEAEAE</color>
+
+    <!-- actionbar分割线颜色 亮绿色-->
+    <color name="light_green">#00FF00</color>
+    <color name="light_yellow">#FFFF00</color>
+
+    <color name="button_back">#169BD5</color>
+    <color name="font_back">#ffffff</color>
+</resources>

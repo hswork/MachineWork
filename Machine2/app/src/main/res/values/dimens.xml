@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="start_image_size">110dp</dimen>
+    <dimen name="button_image_size">40dp</dimen>
+    <dimen name="icon_image_size">40dp</dimen>
+
+    <dimen name="main_actionbar_height">60dp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="menu_font_size">28sp</dimen>
+    <dimen name="menu_word_font_size">20sp</dimen>
+    <dimen name="main_title_font_size">36sp</dimen>
+    <dimen name="table_font_size">28sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="edit_text_padding_top">0dp</dimen>
+    <dimen name="button_font_size">24sp</dimen>
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="info_size">400dp</dimen>
+</resources>

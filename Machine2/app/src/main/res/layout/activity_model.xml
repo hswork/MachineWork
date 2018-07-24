@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/mainColor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_actionbar_height"
+        android:background="@color/mainColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/icon_image_size"
+                android:layout_height="@dimen/icon_image_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_huansi_200"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="机台："
+                android:textSize="@dimen/menu_word_font_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_jiTaiHao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_word_font_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_word_font_size"
+                android:layout_gravity="center_vertical"
+                android:text="姓名:"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/tv_act_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_word_font_size"
+                android:layout_gravity="center_vertical"
+                android:text=""
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_word_font_size"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffff"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/img_model"
+                    android:layout_width="@dimen/button_image_size"
+                    android:layout_height="@dimen/button_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/nav_main"/>
+
+                <Button
+                    android:id="@+id/btn_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/menu_font_size"
+                    android:layout_marginLeft="-10dp"
+                    android:text="主页"
+                    android:layout_toRightOf="@id/img_model"
+                    android:background="#00000000"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/light_green"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:textSize="28sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/padding1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textColor="@color/font_back"
+            android:background="@drawable/button_back"
+            android:text="取消"
+            android:textSize="@dimen/button_font_size"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_green"
+            android:maxWidth="@dimen/info_size"
+            android:singleLine="false"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_back"
+            android:background="@drawable/button_back"
+            android:textSize="@dimen/button_font_size"
+            android:text="确定"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+</LinearLayout>
